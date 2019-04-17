@@ -1,0 +1,144 @@
+body{
+    background: linear-gradient(135deg, #feffb6 26%, #cfcfce 26%, #cfcfce 45%, #f5f5f5 45%) no-repeat;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    margin:0px 80px 0px 80px;
+    max-width: 1400px;
+}
+
+#header{
+    font-size:48px;
+    margin: 100px 0px 50px 0px;
+    font-weight: bold;
+}
+
+.slideshow{
+    margin-bottom: 100px;
+}
+
+.slides{
+    max-width: 1300px;
+    position: relative;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    min-width:18.5rem;
+    max-height: 40em;
+    min-height: 40em;
+    height: border-box;
+    margin-right:80px;
+    padding: 30px;
+    float:left;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    color: #5f5f5f;
+}
+
+.slide:hover{
+    box-shadow: 0px 0px 0px 2px rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+.slide h1{
+    font-size: 48px;
+    border-bottom: 2px solid #DB4951;
+    width: 55px;
+    color:black;
+}
+
+.slide h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.slide h4{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.slide__title{
+    align-self:flex-start;
+}
+
+img{
+    width:275px;
+    height:275px;
+    margin-bottom: 20px;
+}
+
+#content{
+    width:1225px;
+    background: #f5f5f5;
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+
+}
+
+#content__title{
+    font-size:48px;
+    padding:10px;
+    border-bottom: 2px solid #DB4951;
+}
+
+#content__header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:60px;
+}
+
+#content__subtitle{
+    width: 50%;
+    color: #5f5f5f;
+}
+
+.selected:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #DB4951;
+    border-radius: 3px 0 0 3px;
+}
+
+iframe{
+    width:1200px;
+    height:600px;
+}
+
+.slick-prev,.slick-next,.slick-prev:hover,.slick-next:hover{
+    position: absolute;
+    content: none;
+    background: #e8dbdd url("../img/next.png")no-repeat center;
+    background-size: 30px;
+    border-radius: 50%;
+    padding: 45px;
+}
+
+.slick-prev{
+    transform: rotate(180deg);
+    box-shadow: 0 -3px 0px 0px #a39a9b;
+    content: none;
+    left: -37px;
+    z-index: 10000;
+    top: 252px;
+}
+.slick-next{
+    box-shadow: 0  3px 0 0 #a39a9b;
+    right:20px;
+    z-index: 10000;
+    top: 282px;
+}
+
+.slick-prev:hover,.slick-next:hover{
+
+}
